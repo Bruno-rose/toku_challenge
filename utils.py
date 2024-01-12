@@ -100,7 +100,6 @@ def simulate_battle(team1: List[Dict], team2: List[Dict]) -> str:
 
     while team1 and team2:
         for character in attack_order:
-            # check if both are still alive
             if character['hp'] <= 0:
                 continue
             if character in team1:

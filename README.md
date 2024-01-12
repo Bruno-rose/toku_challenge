@@ -1,51 +1,48 @@
-# Pelea de Personajes
+# Pelea de Personajes (Character Fight)
 
-## Overview
-"Pelea de personajes" is a game that simulates battles between superheroes and villains using the [Superhero API](https://www.superheroapi.com/). 
+## What This Game Is About
+"Pelea de Personajes" (Character Fight) is a fun game where you can make superheroes and villains fight. It uses information from the [Superhero API](https://www.superheroapi.com/) to make these battles.
 
-## Prerequisites
+## Before You Start
 
-Before you begin, ensure you have met the following requirements:
-- You have installed the latest version of Python
-- You have a `<Windows/Linux/Mac>` machine. 
+You need a few things ready:
+- Python installed on your computer.
+- A computer with Windows, Linux, or macOS.
 
-## Run the challenge script
+## How to Start the Game
 
-Follow these steps:
+Here’s how to set it up:
 
-Linux and macOS:
-```
+### For Linux and macOS:
+```bash
 python3 -m venv env
 source env/bin/activate
 pip install -r requirements.txt
 ```
 
-Windows:
-```
+### For Windows:
+```bash
 python -m venv env
 .\env\Scripts\activate
 pip install -r requirements.txt
 ```
 
-Then:
-
-```
+### To Play the Game
+Run this command:
+```bash
 python game_executer.py
 ```
 
-## Gameplay
-- **Team Formation**: Each player creates two teams of five characters each, chosen randomly without repetition.
-- **Stamina Assignment**: Each character is assigned an "Actual Stamina" value.
-- **Team Alignment**: A team is classified as good or evil based on the majority of its members. Characters receive bonuses or penalties based on their alignment relative to their team's.
+## How to Play
+- **Making Teams**: You make two teams with five characters in each. These characters are chosen randomly and are all different.
+- **Energy Levels**: Every character gets an "Actual Stamina" number.
+- **Good or Bad Teams**: A team is either good or bad, depending on what most characters are. This affects how the characters do in the game.
 
-## Rules
-- **Battle Simulation**: Battles are simulated using characters' stats from the Superhero API.
-- **Fight Order**: In each turn, the characters attacks a random adversary from the opposing team, the fastest characters go first.
-- **Health Points Calculation**: Health points are calculated based on specific formulas.
-- **Determining the Winner**: The winning team is the one with the last standing character(s).
+## The Rules
+- **How Fights Work**: The game uses the Superhero API to decide how the characters fight.
+- **Who Attacks First**: Characters who are faster get to attack first.
+- **Figuring Out Health**: We use special formulas to figure out how much health each character has.
+- **Winning the Game**: The team that has characters still standing at the end wins.
 
-
-## Optional Challenge
-- **Email Integration**: Integrate an email API to send summaries of the battles.
-
-
+## What We Assume
+- We assume that every character have at least one attack with a positive value.
